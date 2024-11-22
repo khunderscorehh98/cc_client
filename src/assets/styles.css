@@ -1,0 +1,9 @@
+/* Import the Parkinsans font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300;400;500;600;700;800&display=swap');
+
+/* Apply the font to the entire body, ensuring it affects all elements */
+body {
+  font-family: "Parkinsans", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;  /* You can adjust this to any value between 300 and 800 */
+}

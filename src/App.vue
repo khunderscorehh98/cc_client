@@ -1,32 +1,54 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+  <div>
+    <v-app>
+      <!-- App Bar -->
+      <v-app-bar app color="primary" dark>
+        <div>
+          Welcome to the Dashboard
+        </div>
+
+        <v-spacer></v-spacer>
+
+        <v-btn @click="logoutButton">
+          Logout
+        </v-btn>
+      </v-app-bar>
+
+      <!-- Main content area -->
+      <v-main>
+        <v-container fluid>
+          <!-- Sidebar component -->
+          <sidebar />
+          
+          <!-- Dynamic routed views -->
+          <router-view />
+        </v-container>
+      </v-main>
+
+      <!-- Use custom footer component here -->
+      <footer />
+    </v-app>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import sidebar from './components/sidebar.vue';
+import footer from './components/footer.vue'; // Importing custom footer component
 
-nav {
-  padding: 30px;
-}
+export default {
+  name: 'App',
+  components: {
+    sidebar,
+    footer // Registering the custom footer component
+  },
+  methods: {
+    logoutButton() {
+      console.log('Logout');
+    }
+  }
+};
+</script>
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+<style scoped>
+/* Optional: Additional styles for your layout */
 </style>
