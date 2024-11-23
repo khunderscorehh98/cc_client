@@ -2,7 +2,7 @@
     <v-navigation-drawer app permanent class="sidebar">
         <v-card class="sidebar-card">
             <v-container class="sidebar-container">
-                <h3 class="sidebar-title">CareerConnect</h3>
+                <h3 class="sidebar-title">Hi, </h3>
                 <v-list>
                     <v-list-item v-for="(item, index) in items" :key="index" link v-if="item.visible">
                         <v-list-item-content>
