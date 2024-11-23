@@ -60,5 +60,7 @@ export default {
 </script>
 
 <style scoped>
-/* Optional: Additional styles for your layout */
+.grey-text {
+  color: #999999;
+}
 </style>

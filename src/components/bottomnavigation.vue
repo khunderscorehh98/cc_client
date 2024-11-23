@@ -25,7 +25,7 @@ export default {
             items: [
                 { name: 'Home', icon: 'mdi-home', link: '/', exact: true },
                 { name: 'Search', icon: 'mdi-magnify', link: '/search', exact: false },
-                { name: 'Notifications', icon: 'mdi-bell', link: '/notifications', exact: false },
+                { name: 'Notifications', icon: 'mdi-bell', link: '/notification', exact: false },
                 { name: 'Profile', icon: 'mdi-account', link: '/profile', exact: false }
             ]
         };

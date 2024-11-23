@@ -24,7 +24,7 @@ export default {
             // Define an array of items with visibility control
             items: [
                 { name: 'Dashboard', visible: true, router: '/' },
-                { name: 'About Us', visible: true, router: '/about' },
+                { name: 'Notifications', visible: true, router: '/notification' },
                 { name: 'Profile', visible: true, router: '/profile' },
                 { name: 'Messages', visible: false },  // This item will be hidden based on `visible: false`
                 { name: 'Settings', visible: true, router: '/settings' }
