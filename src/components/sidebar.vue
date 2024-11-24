@@ -25,6 +25,7 @@ export default {
             items: [
                 { name: 'Dashboard', visible: true, router: '/' },
                 { name: 'Notifications', visible: true, router: '/notification' },
+                { name: 'Training', visible: true, router: '/training' },
                 { name: 'Profile', visible: true, router: '/profile' },
                 { name: 'Messages', visible: false },  // This item will be hidden based on `visible: false`
                 { name: 'Settings', visible: true, router: '/settings' }
